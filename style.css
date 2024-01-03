@@ -1,0 +1,173 @@
+:root {
+  --clr-orange: hsl(25, 97%, 53%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-lightGrey: hsl(217, 12%, 63%);
+  --clr-mediumGrey: hsl(216, 12%, 54%);
+  --clr-blue: hsl(213, 19%, 18%);
+  --clr-darkBlue: hsl(216, 12%, 8%);
+  --ff: "Overpass", sans-serif;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: var(--ff);
+  font-size: 15px;
+  background-color: var(--clr-darkBlue);
+  color: white;
+}
+
+main {
+  background-color: var(--clr-blue);
+  margin: 24px;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 400px;
+  height: 400px;
+
+}
+
+.hidden{
+  display: none;
+}
+
+.starImage {
+  padding: 10px;
+  background-color: hsl(213, 19%, 22%);
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 1.5em;
+}
+
+.flexgroup {
+  margin: 1rem 0;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.flexgroup div {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: var(--clr-lightGrey);
+  text-align: center;
+  padding: 15px;
+  background-color: hsl(213, 19%, 22%);
+}
+
+.flexgroup div:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--clr-orange);
+}
+
+.btn {
+  margin: 1rem 0;
+  width: 100%;
+  height: 46px;
+  border-radius: 3rem;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+  letter-spacing: 2px;
+  padding: 15px 0;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--clr-white);
+  color: var(--clr-orange);
+}
+
+.feedback {
+  color: var(--clr-lightGrey);
+  margin: 1rem 0;
+}
+
+.thankYou {
+  text-align: center;
+  /* border: 1px solid white; */
+  background-color: var(--clr-blue);
+  border-radius: 1rem;
+  display: none;
+}
+
+.showContainer{
+  display: block;
+}
+
+.thankYou__image {
+  margin: 1rem 4rem;
+}
+
+.rating {
+  margin: 1rem 20%;
+  padding: 5px;
+  border-radius: 1rem;
+  background-color: hsl(213, 19%, 22%);
+  color: var(--clr-orange);
+}
+
+h2 {
+  margin: 1rem 0;
+}
